@@ -1,0 +1,22 @@
+{
+  "name": "favstarmy",
+  "version": "0.0.0",
+  "description": "precision targetting for flame wars",
+  "main": "server.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jessehattabaugh/favstarmy.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Jesse Hattabaugh",
+  "license": "Artistic-2.0",
+  "bugs": {
+    "url": "https://github.com/jessehattabaugh/favstarmy/issues"
+  },
+  "homepage": "https://github.com/jessehattabaugh/favstarmy"
+}
