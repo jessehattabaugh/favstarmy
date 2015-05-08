@@ -4,7 +4,11 @@
   "description": "precision targetting for flame wars",
   "main": "server.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha",
+    "init": "firebase init",
+    "deploy": "firebase deploy",
+    "build-html": "jade src/index.jade -o public/index.html",
+    "build-js": "browserify src/entry.js -t babelify -o public/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/jessehattabaugh/favstarmy/issues"
   },
-  "homepage": "https://github.com/jessehattabaugh/favstarmy"
+  "homepage": "https://github.com/jessehattabaugh/favstarmy",
+  "dependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^10.1.1",
+    "firebase": "^2.2.4",
+    "firebase-tools": "^1.1.6",
+    "jade": "^1.9.2"
+  }
 }
