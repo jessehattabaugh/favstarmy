@@ -1,6 +1,6 @@
 {
   "firebase": "favstarmy",
-  "public": "public",
+  "public": "www",
   "ignore": [
     "firebase.json",
     "**/.*",

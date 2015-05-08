@@ -1,0 +1,1 @@
+// the basicest static asset server you got

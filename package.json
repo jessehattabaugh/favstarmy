@@ -1,14 +1,12 @@
 {
   "name": "favstarmy",
   "version": "0.0.0",
-  "description": "precision targetting for flame wars",
-  "main": "server.js",
+  "description": "constructs a web app that checks twitter for messages being sent between any two lists",
   "scripts": {
-    "test": "mocha",
-    "init": "firebase init",
-    "deploy": "firebase deploy",
-    "build-html": "jade src/index.jade -o public/index.html",
-    "build-js": "browserify src/entry.js -t babelify -o public/bundle.js"
+    "test": "node test",
+    "build": "node build",
+    "predeploy": "npm --min run build",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
@@ -28,6 +26,7 @@
     "browserify": "^10.1.1",
     "firebase": "^2.2.4",
     "firebase-tools": "^1.1.6",
-    "jade": "^1.9.2"
+    "jade": "^1.9.2",
+    "shelljs": "^0.4.0"
   }
 }
